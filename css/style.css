@@ -42,8 +42,9 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-
-
+#typed {
+  font-size: 6em;
+}
 #cd-timeline {
   position: relative;
   padding: 2em 0;
@@ -67,11 +68,18 @@ Main components
 	#cd-timeline::before {
     left: 45px;
   }
+  #myCanvas {
+    display: none;
+  }
+  #typed{
+    font-size: 2.8em;
+  }
 }
 @media(max-width:500px){
 	#cd-timeline::before {
     left: 35px;
   }
+
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline::before {
@@ -248,7 +256,7 @@ Main components
   border-radius: 0.25em;
 }
 .no-touch .cd-timeline-content .cd-read-more:hover {
-  background-color: #bac4cb;
+  background-color: #3875ff;
 }
 .cd-timeline-content .cd-date {
   float: left;
